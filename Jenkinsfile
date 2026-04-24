@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh '''
                 docker rm -f web-container || true
-                docker run -d -p 8080:80 --name web-container webapp:latest
+                docker run -d -p 8081:80 --name web-container webapp:latest
                 '''
             }
         }
